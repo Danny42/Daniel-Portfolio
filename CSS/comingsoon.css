@@ -1,0 +1,302 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  
+  
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.36'%3E%3Cpolygon fill='%230D0D0D' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230D0D0D' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+    text-align: center;
+    color:#fff;
+    padding-top:50px;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+
+  
+  /* Base styles */
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  
+  .logo a{display: absolute;
+      text-align: left;
+    float:left;
+      color: #000000;
+      overflow: hidden;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;}
+  
+  .logo h1{display: block;
+      width: 100%;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 1.3;
+    font-weight:900;
+    z-index:-99;
+     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}
+  /* nav */
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+   background: rgba(19, 19, 19, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(39, 240, 32, 0.11);
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius:2px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+    margin:auto;
+    float:right;
+    text-align: right;
+  }
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 .5rem;
+    }
+  }
+  
+  .nav-list a {
+  font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    padding:5px 20px;
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+  }
+  .hero{height: 200px;margin:auto;font-size: 69px;margin-top:20vh;
+  }
+  .hero h1{font-family:'Raleway'
+  }
+
+  .coming-soon{height: 200px;margin:auto;font-size: 69px;margin-top:20vh;}
+  .coming-soon h1{font-family:'Raleway'}
+
+  .coming-soon h1 {
+ 
+   text-shadow: 0px 0px 10px green;
+    animation-name: stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        text-shadow: 0px 0px 30px green;
+ 
+        
+    }
+
+    50% {
+        text-shadow: 0px 0px 10px green;
+    }
+
+    100% {
+        text-shadow: 0px 0px 30px green;
+    }
+}
+
+
+
+  .coming-soon h3{font-family:'Raleway';font-size: 40px; max-width: 70%;margin:auto}
+  .social-icons{margin:5% auto ;text-align: center;display: inline-block;}
+  
+  .icon{width: 100px;height: 100px; text-align: center;display: inline-block; margin:10px}
+  .icon:hover{box-shadow: 0px 0px 10px green inset;}
+  .loader{
+    
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto 10px;
+ 
+    vertical-align: top;
+  }
+  
+  /*
+    Set the color of the icon
+  */
+  svg path,
+  svg rect{
+    fill: green;
+  }
+
+/*ANIMATED ICONS*/
+  .cool-icons {
+    position:absolute;
+    top:75%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  ul li {
+    list-style:none;
+  }
+  ul li a {
+    display:block;
+    position:relative;
+    width:100px;
+    height:100px;
+    line-height:100px;
+    font-size:40px;
+    text-align:center;
+    text-decoration:none;
+    color:#404040;
+    margin: 0 30px;
+    transition:.5s;
+  }
+  ul li a span {
+    position:absolute;
+    transition: transform .5s;
+  }
+  ul li a span:nth-child(1),
+  ul li a span:nth-child(3){
+    width:100%;
+    height:3px;
+    background:#404040;
+  }
+  ul li a span:nth-child(1) {
+    top:0;
+    left:0;
+    transform-origin: right;
+  }
+  ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:transform .5s;
+  }
+  
+  ul li a span:nth-child(3) {
+    bottom:0;
+    left:0;
+    transform-origin: left;
+  }
+  ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .5s;
+  }
+  
+  ul li a span:nth-child(2),
+  ul li a span:nth-child(4){
+    width:3px;
+    height:100%;
+    background:#404040;
+  }
+  ul li a span:nth-child(2) {
+    top:0;
+    left:0;
+    transform:scale(0);
+    transform-origin: bottom;
+  }
+  ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition:transform .5s;
+  }
+  ul li a span:nth-child(4) {
+    top:0;
+    right:0;
+    transform:scale(0);
+    transform-origin: top;
+  }
+  ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition:transform .5s;
+  }
+  
+  .green-icon:hover {
+    color: green;
+    box-shadow: 0px 0px 10px green;
+  }
+  .green-icon:hover span { 
+    background: green;
+  }
+
+  ul li a .twitter {
+    color: green;
+  }
+  ul li a:hover:nth-child(3) {
+    color: green;
+  }
+  ul li a:hover:nth-child(4) {
+    color: green;
+  }
+  footer p{position:absolute; text-align: center;margin: auto;
+bottom:0%; left:43.3%; font-family: 'Raleway', sans-serif;
+}
