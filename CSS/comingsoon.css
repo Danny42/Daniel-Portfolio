@@ -461,13 +461,22 @@ ul li a {
     flex-wrap:wrap;
   
 }} 
-
+.line-bg{ color: var(--bg-color);
+  fill: currentColor;}
+.line-bg>svg>polygon{ /*target the image with css*/
+  fill: var(--bg-color);
+}
 
 svg polygon {fill: #0D0D0D !important;}
 
  polygon {fill: #0D0D0D !important;}
 
 @media (prefers-color-scheme: dark) {
+    .line-bg{ color: var(--bg-color);
+  fill: currentColor;}
+.line-bg>svg>polygon{ /*target the image with css*/
+  fill: var(--bg-color);
+}
            svg polygon { fill: #0D0D0D !important; }
             polygon {
             fill: #0D0D0D !important;}
@@ -480,7 +489,7 @@ svg polygon {fill: #0D0D0D !important;}
       body {
     overflow: hidden ;
     background-color: #000000 ;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.36'%3E%3Cpolygon fill='%230D0D0D' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230D0D0D' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E") ;
+background-image: url(../IMG/bg.svg) ;
     text-align: center ;
     color:#fff ;
     padding-top:50px ;
