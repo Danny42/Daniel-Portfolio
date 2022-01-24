@@ -1,10 +1,13 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'>
- <style>
-        polygon {
-            fill: #0D0D0D;
-        }
-        @media (prefers-color-scheme: dark) {
-            polygon { fill: #0D0D0D; }
-        }
-    </style>    
+    <style>
+    svg polygon {fill: #0D0D0D !important;}
+
+ polygon {fill: #0D0D0D !important;}
+
+@media (prefers-color-scheme: dark) {
+           svg polygon { fill: #0D0D0D !important; }
+            polygon {
+            fill: #0D0D0D !important;}
+    
+    </style>
 <g fill-opacity='0.36'><polygon fill='currentColor' points='20 10 10 0 0 0 20 20'/><polygon fill='currentColor' points='0 10 0 20 10 20'/></g></svg>
