@@ -1,1 +1,10 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'><g fill-opacity='0.36'><polygon fill='#0D0D0D' points='20 10 10 0 0 0 20 20'/><polygon fill='#0D0D0D' points='0 10 0 20 10 20'/></g></svg>
+<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'>
+ <style>
+        path {
+            polygon: #0D0D0D;
+        }
+        @media (prefers-color-scheme: dark) {
+            polygon { fill: #0D0D0D; }
+        }
+    </style>    
+<g fill-opacity='0.36'><polygon fill='#0D0D0D' points='20 10 10 0 0 0 20 20'/><polygon fill='#0D0D0D' points='0 10 0 20 10 20'/></g></svg>
