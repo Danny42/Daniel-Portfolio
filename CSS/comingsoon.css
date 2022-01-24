@@ -4,6 +4,7 @@
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --bg-color: #0D0D0D;
   }
   
   * {
@@ -461,7 +462,21 @@ ul li a {
   
 }} 
 
-@media (prefers-color-scheme: dark){
+
+svg polygon {fill: #0D0D0D !important;}
+
+ polygon {fill: #0D0D0D !important;}
+
+@media (prefers-color-scheme: dark) {
+           svg polygon { fill: #0D0D0D !important; }
+            polygon {
+            fill: #0D0D0D !important;}
+    
+    
+       svg polygon { fill: var(--bg-color) !important; }
+            polygon {
+            fill: var(--bg-color) !important;}
+    
       body {
     overflow: hidden ;
     background-color: #000000 ;
