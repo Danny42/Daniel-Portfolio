@@ -461,8 +461,8 @@ ul li a {
     flex-wrap:wrap;
   
 }} 
-.line-bg{ color: var(--bg-color);
-  fill: currentColor;}
+.line-bg{
+  fill:  var(--bg-color);}
 .line-bg>svg>polygon{ /*target the image with css*/
   fill: var(--bg-color);
 }
@@ -472,8 +472,8 @@ svg polygon {fill: #0D0D0D !important;}
  polygon {fill: #0D0D0D !important;}
 
 @media (prefers-color-scheme: dark) {
-    .line-bg{ color: var(--bg-color);
-  fill: currentColor;}
+    .line-bg{ 
+  fill:  var(--bg-color);}
 .line-bg>svg>polygon{ /*target the image with css*/
   fill: var(--bg-color);
 }
