@@ -351,8 +351,9 @@ transform: translate(-50%, 0);}*/
 /*MEDIA QUERIES------------HEIGHT*/
 @media screen and (max-height:500px){
 
-  .coming-soon{margin-top:2vh;margin-bottom:30px;}  
-.wrapper{min-height: 800px;
+  .coming-soon{margin-top:2vh;margin-bottom:30px;}  .body-cs {
+      overflow: scroll;}
+.wrapper{min-height: 500px;
   margin-bottom: -50px;
 }}
 
