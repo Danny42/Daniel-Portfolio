@@ -506,7 +506,7 @@ ul li a {
   display:flex;
     flex-wrap:wrap;
   }
- .wrapper{min-height: 90%;
+ .wrapper{min-height: 80%;
         margin-bottom: -50px;}
 } 
 @media screen and (max-width:376px){
@@ -545,7 +545,7 @@ ul li a {
   display:flex;
     flex-wrap:wrap;
   }
- .wrapper{min-height: 90%;
+ .wrapper{min-height: 80%;
         margin-bottom: -50px;}
 } 
 @media screen and (max-width:369px){
