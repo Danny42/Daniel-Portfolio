@@ -352,7 +352,11 @@ transform: translate(-50%, 0);}*/
 @media screen and (max-height:500px){
 
   .coming-soon{margin-top:2vh;margin-bottom:30px;}  .body-cs {
-      overflow: scroll;}
+        overflow: hidden;
+   text-align: center !important;
+ height: 100% !important;
+      max-height: auto;}
+    
 .wrapper{min-height: 500px;
   margin-bottom: -50px;
 }}
