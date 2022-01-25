@@ -380,6 +380,11 @@ transform: translate(-50%, 0);}*/
       
 }
 @media screen and (max-width:780px){
+     .body-cs {
+        overflow: scroll;
+   text-align: center !important;
+ height: 100% !important;
+      max-height: auto;}
   .container-fluid{padding-left:5px !important;padding-right:5px !important ;}
     
   .coming-soon h1 {
