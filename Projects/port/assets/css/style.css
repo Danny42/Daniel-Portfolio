@@ -30,7 +30,7 @@ html {
 }
 
 .nav-container {
-  z-index: 9;
+  z-index: 99;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -369,7 +369,8 @@ body {
   background: #333;
   widows: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 @media only screen and (max-width: 680px) {
   body {
@@ -377,7 +378,8 @@ body {
     background: #333;
     widows: 100%;
     height: auto;
-    overflow: scroll;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 }
 
@@ -755,4 +757,31 @@ ul li a:hover:nth-child(4) {
 }
 ul li a i:hover {
   color: green;
+}
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+      display: none;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+      display: none;
+  }
 }

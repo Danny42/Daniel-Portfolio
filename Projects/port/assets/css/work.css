@@ -1,3 +1,36 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: unset;}
+
+
+  img{width: 100%;border-radius: 3px; box-shadow: .5px .5px 5px #222;display: block;
+    margin-left: auto;
+    margin-right: auto;}
+img{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  80% {
+    opacity: 0;
+}
+  100% {
+      opacity: 1;
+   }
+}
+
+
 .nav-trigger-container {
   z-index: 10;
   position: fixed;
@@ -21,7 +54,7 @@
 }
 
 .nav-container {
-  z-index: 9;
+  z-index: 99;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -341,7 +374,8 @@ main .main-page .hero-button {
   }
 }
 * {
-  margin: 0;
+  margin: auto;
+    vertical-align: middle;
   padding: 0;
   box-sizing: border-box;
 }
@@ -358,9 +392,10 @@ a:hover {
 body {
   font-family: "Poppins", sans-serif;
   background: #333;
-  widows: 100%;
-  height: 100vh;
-  overflow: scroll;
+ widows: 100%;
+  height: auto;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 @media only screen and (max-width: 680px) {
   body {
@@ -368,7 +403,8 @@ body {
     background: #333;
     widows: 100%;
     height: auto;
-    overflow: scroll;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
   }
 }
 
@@ -397,7 +433,7 @@ ul {
 =============================== */
 .text-s {
 
-  position: absolute;
+  position: fixed;
   top: 200px;
   left: 100px;
   transform: rotate(-90deg);
@@ -489,10 +525,12 @@ ul {
   =============================== */
   .text-s {
     position: absolute;
-    bottom: -150px;
-    left: -32px;
+    bottom: unset;
+    top:unset;
+    left: unset;
+    right: unset;
     transform: rotate(-90deg);
-    opacity: 0.4;
+    opacity: 0.2;
   }
   .text-s h1 {
     font-size: 120px;
@@ -750,16 +788,48 @@ ul li a i:hover {
 }
 
 
-.section{margin:50px 0px}
+.section{margin:50px 0px;padding:50px}
 .row{display: flex;
 flex-wrap: wrap;}
 
 .col-md-12{width: 100%;display: inline-block;padding: 10px;}
-.col-md-6{width: 50%;display: inline-block;padding: 10px;}
-.col-md-3{width: 33%;display: inline;padding: 10px;}
+.col-md-6{width: 50%;display: inline-block;padding: 10px; display: table-cell;
+  vertical-align: middle;}
+.col-md-3{width: 33%;display: inline;padding: 10px; display: table-cell;
+  vertical-align: middle;}
 
 @media screen and (max-width:680px){
   .col-sm-12{width: 100%;display: inline-block;padding: 5px;}
 .col-sm-6{width: 50%;display: inline-block;padding: 5px;}
 .col-sm-3{width: 33%;display: inline;padding: 5px;}
+}
+
+
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+      display: none;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+      display: none;
+  }
 }
