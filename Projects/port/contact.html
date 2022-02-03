@@ -6,6 +6,8 @@
   <title> Contact Me | Daniel van den Berg - Portfolio</title>
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
 <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/contact-form.css">
+
 <link rel="stylesheet" href="./assets/css/normalize.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,26 +134,74 @@
     <div class="row">
   <div class="col-md-12">
       <h1> Hi, I'm Daniel</h1>
-      <p class="-from-bottom">My passion lies in website, code and anything that can be created using digital media. I love messing around in photoshop and Blender during my free time and as a creative I strive to find new ideas and inspiration that can improve my work and threngthen my knowledge as a creative! I love digital ART!</p>
+      <p class="-from-bottom">You've made it all the way to this page? Might as well put purpose in your actions and leave me a message! if you want you can contact me directly via email below.</p>
     </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+        ,section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form" action="contact.php">
+            <div class="form-group"id="POT">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="firstname" placeholder="firstname" name="firstname" value="" required style="margin-top:15px">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required style="margin-top:15px">
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required style="margin-top:15px">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="number" class="form-control" id="number" placeholder="Contact Number" name="number" value="" required style="margin-top:15px">
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message" required style="margin-top:15px"></textarea>
+            
+            <button id="submit" type="submit" value="SEND">
+              <div class="icon-container">
+                <ul class="cool-icons">
+                    <li>
+                      <a class="green-icon" href="work.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                       <p>SEND</p>
+                      </a>
+                    </li>
+                    </ul>
+                    </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+         
+          
+        </div>
+        
+      </section> 
+    <div class="row">
+      <div class="col-md-12">
          <!--<a href="work.html"><button class="button">VIEW MY WORK</button></a>-->
 
-         <div class="icon-container">
-          <ul class="cool-icons">
-              <li>
-                <a class="green-icon" href="work.html">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                 <p>VIEW MY WORK</p>
-                </a>
-              </li>
-              </ul>
-              </div>
+     
       </div>
         </div>
   </div>
