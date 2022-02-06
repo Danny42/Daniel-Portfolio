@@ -506,10 +506,11 @@ font-size: 24px;
   =============================== */
   .text-s {
     position: absolute;
-    bottom: -150px;
-    left: -32px;
+    bottom: 0;
+    left: -150px;
+    top:325px;
     transform: rotate(-90deg);
-    opacity: 0.4;
+    opacity: 0.3;
   }
   .text-s h1 {
     font-size: 120px;
@@ -608,6 +609,7 @@ font-size: 24px;
 @media screen and (max-width:680px){
   .sponsor {
     position: absolute;
+    display: none;
     right: 20px;
     bottom: 20px;
     text-align: center;

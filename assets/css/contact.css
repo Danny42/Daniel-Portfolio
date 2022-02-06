@@ -6,7 +6,7 @@ html {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;}
+  overflow-y: scroll;}
 .nav-trigger-container {
   z-index: 10;
   position: fixed;
@@ -377,9 +377,10 @@ body {
     font-family: "Poppins", sans-serif;
     background: #333;
     widows: 100%;
-    height: auto;
+    height: auto !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
+    overflow-y: scroll !important;
   }
 }
 
@@ -499,10 +500,10 @@ ul {
   =============================== */
   .text-s {
     position: absolute;
-    bottom: -150px;
-    left: -32px;
+    bottom: unset;
+    left: unset;
     transform: rotate(-90deg);
-    opacity: 0.4;
+    opacity: 0.3;
   }
   .text-s h1 {
     font-size: 120px;
@@ -573,7 +574,7 @@ ul {
   .media ul {
     position: fixed;
     top: 250px;
-    left: -150px;
+    left: -170px;
     transform: rotate(-90deg);
     bottom: unset;
 }}
@@ -600,9 +601,9 @@ ul {
 
 @media screen and (max-width:680px){
   .sponsor {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+    bottom: 28px;
+    position: fixed;
+    right: 10px;
     text-align: center;
   }
 }
@@ -656,7 +657,6 @@ transform: translate(-50%, 0);}*/
 }
 .cool-icons {
   position:relative;
-
   margin:0;
   padding:0;
   display:flex;
@@ -758,6 +758,17 @@ ul li a:hover:nth-child(4) {
 ul li a i:hover {
   color: green;
 }
+
+@media screen and (max-width:680px){
+  .cool-icons {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+}}
+
+
+  
 #hideMe {
   -moz-animation: cssAnimation 0s ease-in 4s forwards;
   /* Firefox */
