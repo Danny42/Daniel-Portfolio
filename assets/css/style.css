@@ -7,6 +7,7 @@ html {
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;}
+
 .nav-trigger-container {
   z-index: 10;
   position: fixed;
@@ -161,7 +162,7 @@ ul.menu li span.show {
   display: flex;
   justify-content: space-between;
   padding: 35px 70px;
-  box-sizing: border-box;
+  box-sizing: border-box !important;;
   color: #bdb2a6;
   font-size: 16px;
 }
@@ -396,7 +397,7 @@ ul {
   transform: rotate(-90deg);
 }
 .media ul li {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
   display: inline-block;
@@ -472,6 +473,12 @@ ul {
 .content h1 {
   font-family: inherit;
   font-weight: 600;
+font-size: 4rem;;
+}
+.content p {
+  font-family: inherit;
+  font-weight: 500;
+font-size: 24px;
 }
 
 .content-gallery {

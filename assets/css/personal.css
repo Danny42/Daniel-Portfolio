@@ -163,7 +163,7 @@ ul.menu li span.show {
   display: flex;
   justify-content: space-between;
   padding: 35px 70px;
-  box-sizing: border-box;
+  box-sizing: border-box !important;;
   color: #bdb2a6;
   font-size: 16px;
 }
@@ -354,7 +354,7 @@ main .main-page .hero-button {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: unset;
+  box-sizing: unset !important;
 }
 
 a {
@@ -398,7 +398,7 @@ ul {
   transform: rotate(-90deg);
 }
 .media ul li {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
   display: inline-block;

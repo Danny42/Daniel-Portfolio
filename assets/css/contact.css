@@ -5,32 +5,8 @@ html {
   -webkit-text-size-adjust: 100%;
   max-width: 100%;
   width: 100%;
-  overflow-x: hidden !important;
-  overflow-y: unset;}
-
-body{font-size: 18px;}
-  img{width: 100%;border-radius: 3px; box-shadow: .5px .5px 5px #222;display: block;
-    margin-left: auto;
-    margin-right: auto;}
-img{
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  80% {
-    opacity: 0;
-}
-  100% {
-      opacity: 1;
-   }
-}
-
-
+  overflow-x: hidden;
+  overflow-y: hidden;}
 .nav-trigger-container {
   z-index: 10;
   position: fixed;
@@ -96,21 +72,11 @@ img{
   width: 100%;
   height: 100%;
 }
-.section{margin:50px 0px;padding:50px}
-
-.Image{width: 100%;text-align: center;}
-.p-Image{margin-top:20px;max-width: 90%;text-align: center;}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 680px) {
   .container {
-    padding: 10px 10px;
+    padding: 30px 35px;
   }
-  .section {
-    margin: 50px 0px;
-    padding: 0px;
 }
-.Image{width: 100%;text-align: center;}
-.p-Image{margin-top:10px;max-width: 100%;text-align: center;}}
 
 ul.menu {
   position: absolute;
@@ -212,8 +178,6 @@ ul.menu li span.show {
     padding: 30px 35px;
   }
 }
-
-
 
 main {
   height: 100%;
@@ -386,8 +350,7 @@ main .main-page .hero-button {
   }
 }
 * {
-  margin: auto;
-    vertical-align: middle;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -404,8 +367,8 @@ a:hover {
 body {
   font-family: "Poppins", sans-serif;
   background: #333;
- widows: 100%;
-  height: auto;
+  widows: 100%;
+  height: 100vh;
   overflow-x: hidden !important;
   max-width: 100% !important;
 }
@@ -415,8 +378,8 @@ body {
     background: #333;
     widows: 100%;
     height: auto;
-    overflow-x: hidden !important;
     max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 }
 
@@ -444,12 +407,11 @@ ul {
 /* TEXT 
 =============================== */
 .text-s {
-
-  position: fixed;
+  position: absolute;
   top: 200px;
   left: 100px;
   transform: rotate(-90deg);
-  opacity: 0.1;
+  opacity: 0.8;
 }
 .text-s h1 {
   font-size: 120px;
@@ -513,11 +475,11 @@ ul {
 }
 
 .content-gallery {
-  margin: 5% auto;
+  margin: 15% auto;
   text-align: left;
   position: absolute;
-  left: 10%;
-  top: 5%;
+  left: 20%;
+  top: 10%;
   max-width: 75%;
 }
 
@@ -537,12 +499,10 @@ ul {
   =============================== */
   .text-s {
     position: absolute;
-    bottom: unset;
-    top:unset;
-    left: unset;
-    right: unset;
+    bottom: -150px;
+    left: -32px;
     transform: rotate(-90deg);
-    opacity: 0.2;
+    opacity: 0.4;
   }
   .text-s h1 {
     font-size: 120px;
@@ -620,8 +580,8 @@ ul {
 /* SPONSOR 
 =============================== */
 .sponsor {
-  position: relative;
-  right: 10px;
+  position: absolute;
+  right: 100px;
   bottom: 50px;
   text-align: center;
 }
@@ -640,7 +600,7 @@ ul {
 
 @media screen and (max-width:680px){
   .sponsor {
-    position: relative;
+    position: absolute;
     right: 20px;
     bottom: 20px;
     text-align: center;
@@ -707,14 +667,14 @@ ul li {
 ul li a {
   display:block;
   position:relative;
-  width:180px;
-  height:50px;
-  line-height:50px;
-  font-size:18px;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  font-size:35px;
   text-align:center;
   text-decoration:none;
   color:#000;
-  margin: 0 0px;
+  margin: 10px 10px;
   transition:.5s;
 }
 ul li a span {
@@ -798,26 +758,6 @@ ul li a:hover:nth-child(4) {
 ul li a i:hover {
   color: green;
 }
-
-
-
-.row{display: flex;
-flex-wrap: wrap;}
-
-.col-md-12{width: 100%;display: inline-block;padding: 10px;}
-.col-md-6{width: 50%;display: inline-block;padding: 10px; display: table-cell;
-  vertical-align: middle;}
-.col-md-3{width: 33%;display: inline;padding: 10px; display: table-cell;
-  vertical-align: middle;}
-
-@media screen and (max-width:680px){
-  .col-sm-12{width: 100%;display: inline-block;padding: 5px;}
-.col-sm-6{width: 50%;display: inline-block;padding: 5px;}
-.col-sm-3{width: 33%;display: inline;padding: 5px;}
-}
-
-
-
 #hideMe {
   -moz-animation: cssAnimation 0s ease-in 4s forwards;
   /* Firefox */
