@@ -585,6 +585,15 @@ font-size: 24px;
     transform: rotate(-90deg);
     bottom: unset;
 }}
+
+@media only screen and (max-width: 680px){
+  .media ul {
+      position: absolute;
+      bottom: 250px;
+      left: -40px;
+      display: inline-flex;
+      transform: rotate(-90deg);}
+  }
 /* SPONSOR 
 =============================== */
 .sponsor {
