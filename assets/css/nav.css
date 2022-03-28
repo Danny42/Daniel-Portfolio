@@ -358,7 +358,7 @@
   @media screen and (max-width:768px){
      body {
     font-family: "Poppins", sans-serif;
-    background: #b3b3b3;}}
+    background: #b3b3b3 !important;}}
 
 /* SOCIAL MEDIA 
   =============================== */

@@ -418,7 +418,7 @@ body {
 @media only screen and (max-width: 680px) {
   body {
     font-family: "Poppins", sans-serif;
-    background: #b3b3b3;
+    background: #b3b3b3 !important;
     widows: 100%;
     height: auto;
     overflow-x: hidden !important;
@@ -658,7 +658,7 @@ font-size: 20px;
 @media screen and (max-width:680px){
   .sponsor {
     position: relative;
-    right: 20px;
+    right: 80px;
     bottom: 20px;
     text-align: center;
   }
