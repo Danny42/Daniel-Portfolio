@@ -375,7 +375,7 @@ body {
 @media only screen and (max-width: 680px) {
   body {
     font-family: "Poppins", sans-serif;
-    background: #333;
+    background: #b3b3b3;
     widows: 100%;
     height: auto !important;
     max-width: 100% !important;

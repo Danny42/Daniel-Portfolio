@@ -355,6 +355,10 @@
     overflow-x: hidden !important;
     max-width: 100% !important;
   }
+  @media screen and (max-width:768px){
+     body {
+    font-family: "Poppins", sans-serif;
+    background: #b3b3b3;}}
 
 /* SOCIAL MEDIA 
   =============================== */
