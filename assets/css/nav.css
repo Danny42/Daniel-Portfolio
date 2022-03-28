@@ -392,7 +392,8 @@
   .media ul {
     position: absolute;
     bottom: 250px;
-    left: 0px;
+    left: -30px;
+    display: inline-flex;
     transform: rotate(-90deg);
   }
   .media ul li {
