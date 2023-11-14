@@ -423,6 +423,7 @@ ul {
   overflow: hidden;
   height: 150px;
   width: 600px;
+  
 }
 .text-s h1 .hide--text {
   position: absolute;
@@ -473,6 +474,8 @@ ul {
 .content h1 {
   font-family: inherit;
   font-weight: 600;
+  color:#bebebe;
+  text-shadow:1px 1px 10px rgb(60, 202, 28), 1px 1px 10px green;
 }
 
 .content-gallery {

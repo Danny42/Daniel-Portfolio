@@ -492,6 +492,8 @@ ul {
 
 .content-gallery h1 {
   font-family: inherit;
+  color:#bebebe
+
 }
 
 
@@ -787,12 +789,15 @@ flex-wrap: wrap;}
 .content-gallery h1 {
   font-family: inherit;
   font-weight: 600;
-font-size:2.5rem;;
+font-size:2.5rem;
+text-shadow:1px 1px 10px rgb(60, 202, 28), 1px 1px 10px green;
+
 }
 .content-gallery p {
   font-family: inherit;
   font-weight: 500;
 font-size: 20px;
+color:#bebebe ;
 }
 
 
@@ -812,7 +817,7 @@ font-size: 20px;
   text-align: center;
 }
 .card-container {
-  padding: 10px 90px;
+  padding: 10px 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

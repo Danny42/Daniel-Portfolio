@@ -529,6 +529,7 @@ ul {
 
 .content-gallery h1 {
   font-family: inherit;
+  text-shadow:1px 1px 10px rgb(60, 202, 28), 1px 1px 10px green;
 }
 
 .content-gallery h1 {
@@ -536,11 +537,14 @@ ul {
   font-weight: 600;
 font-size:2.5rem;
 margin-bottom:5px;
+color:#bebebe
 }
 .content-gallery p {
   font-family: inherit;
   font-weight: 500;
 font-size: 20px;
+color:#bebebe
+
 }
 
 .me:hover{transform: grow .3s;}
