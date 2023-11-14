@@ -358,7 +358,7 @@ main .main-page .hero-button {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(235, 235, 235);
 }
 
 a:hover {
@@ -376,7 +376,7 @@ body {
 @media only screen and (max-width: 680px) {
   body {
     font-family: "Poppins", sans-serif;
-    background: #b3b3b3 !important;
+    background: #333 !important;
     widows: 100%;
     height: auto;
     max-width: 100% !important;
@@ -407,9 +407,11 @@ ul {
 
 /* TEXT 
 =============================== */
+h1{color:rgb(235, 235, 235)}
+p{color:rgb(235, 235, 235)}
 .text-s {
   position: absolute;
-  top: 200px;
+  top: 163px;
   left: 100px;
   transform: rotate(-90deg);
   opacity: 0.8;
@@ -463,7 +465,7 @@ ul {
 }
 
 .content {
-  margin: 10% auto;
+  margin: 5% auto;
   text-align: left;
   position: absolute;
   left: 40%;
