@@ -485,13 +485,21 @@ ul {
 }
 
 .content-gallery {
-  margin: 5% auto;
+  margin: auto;
   text-align: left;
   position: absolute;
-  left: 10%;
-  top: 0;
-  max-width: 80%;
+  max-width: 80%;left: 10%;
 }
+.content-gallery1 {
+  margin: auto;
+  text-align: left;
+  position: relative;
+  max-width: 80%;left: 10%;
+}
+
+#gallery{margin: auto;}
+
+#cards{width: 100%;margin: auto;}
 
 .content-gallery h1 {
   font-family: inherit;
@@ -578,6 +586,7 @@ ul {
     max-width: 90%;
   }
 .content h1{font-size: 50px;}
+
   .content-gallery {
     margin: 10% auto;
 text-align: left;
@@ -821,14 +830,14 @@ color:#ffffff ;
   text-align: center;
 }
 .card-container {
-  padding: 10px 50px;
+  padding: 250px 150px 150px ;max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .card-wrap {
 margin: 0px;
-transform: perspective(800px);
+transform: perspective(500px);
 transform-style: preserve-3d;
 cursor: pointer;
 }
@@ -851,21 +860,21 @@ transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1
 opacity: 0.8;
 }
 .card-wrap:hover .card {
-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);z-index: 99;
 box-shadow: rgb(44 190 7 / 18%) 0 0 5px 5px, rgb(1 1 1) 0 0 0 1px, rgb(8 122 8 / 36%) 0 10px 20px 0, inset rgb(13 138 44 / 55%) 0 0 0 5px, inset rgb(10 143 32 / 36%) 0 0 0 6px;}
 
 .card {
 position: relative;
 flex: 0 0 240px;
 width: 340px;
-height: 320px;
+height: 320px;cursor:pointer;
 background-color: #333;
-overflow: hidden;
+overflow: hidden;z-index: 10;
 border-radius: 0px;
 
 box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px; transition:1s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
-.card:hover{filter:none;}
+.card:hover{filter:none;z-index: 99;cursor: none;}
 
 .card-bg {
 opacity: 0.5;
