@@ -373,7 +373,8 @@ a:hover {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #333;
+  background: #747474;
+
   widows: 100%;
   height: auto;
   overflow-x: hidden !important;
@@ -382,7 +383,7 @@ body {
 @media only screen and (max-width: 680px) {
   body {
     font-family: "Poppins", sans-serif;
-    background: #b3b3b3 !important;
+    background: #747474 !important;
     widows: 100%;
     height: auto;
     overflow-x: hidden !important;
@@ -408,6 +409,7 @@ ul {
   letter-spacing: 2px;
   display: inline-block;
   padding: 0 30px;
+  color:rgb(192, 192, 192);
   text-transform: uppercase;
 }
 
@@ -419,6 +421,7 @@ ul {
   left: 100px;
   transform: rotate(-90deg);
   opacity: 0.4;
+  z-index: -1;
 }
 .text-s h1 {
   font-size: 120px;
@@ -492,7 +495,7 @@ ul {
 
 .content-gallery h1 {
   font-family: inherit;
-  color:#bebebe
+  color:#ffffff
 
 }
 
@@ -514,6 +517,7 @@ ul {
     right: unset;
     transform: rotate(-90deg);
     opacity: 0.2;
+    z-index: -1;
   }
   .text-s h1 {
     font-size: 120px;
@@ -797,7 +801,7 @@ text-shadow:1px 1px 10px rgb(60, 202, 28), 1px 1px 10px green;
   font-family: inherit;
   font-weight: 500;
 font-size: 20px;
-color:#bebebe ;
+color:#ffffff ;
 }
 
 

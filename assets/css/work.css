@@ -409,7 +409,7 @@ a:hover {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #333;
+  background: #747474;
  widows: 100%;
   height: auto;
   overflow-x: hidden !important;
@@ -418,7 +418,7 @@ body {
 @media only screen and (max-width: 680px) {
   body {
     font-family: "Poppins", sans-serif;
-    background: #b3b3b3 !important;
+    background: #747474 !important;
     widows: 100%;
     height: auto;
     overflow-x: hidden !important;
@@ -543,7 +543,7 @@ color:#bebebe
   font-family: inherit;
   font-weight: 500;
 font-size: 20px;
-color:#bebebe
+color:#ffffff
 
 }
 
@@ -564,6 +564,7 @@ color:#bebebe
     right: unset;
     transform: rotate(-90deg);
     opacity: 0.2;
+    z-index: -1;
   }
   .text-s h1 {
     font-size: 120px;
