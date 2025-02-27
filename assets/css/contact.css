@@ -1,50 +1,3 @@
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  max-width: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;}
-.nav-trigger-container {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  color: white;
-}
-.nav-trigger-container .nav-trigger-background {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  transform: rotate(45deg) translateY(-80%);
-  transition: transform 1s;
-}
-.nav-trigger-container .nav-trigger {
-  position: absolute;
-  top: 45px;
-  right: 45px;
-}
-
-.nav-container {
-  z-index: 99;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  display: none;
-  overflow: hidden;
-  pointer-events: none;
-}
-.nav-container.-open {
-  pointer-events: initial;
-  display: block;
-  transition-timing-function: ease;
-}
 
 .background-wrapper {
   width: calc(1.5 * (100vh + 100vw));
@@ -388,23 +341,7 @@ ul {
   list-style-type: none;
 }
 
-/* SOCIAL MEDIA 
-=============================== */
-.media ul {
-  position: absolute;
-  bottom: 250px;
-  left: -140px;
-  transform: rotate(-90deg);
-}
-.media ul li {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  display: inline-block;
-  padding: 0 30px;
-  text-transform: uppercase;
-  color:rgb(192, 192, 192);
-}
+
 
 /* TEXT 
 =============================== */

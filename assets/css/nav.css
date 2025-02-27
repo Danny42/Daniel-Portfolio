@@ -1,5 +1,5 @@
 .nav-trigger-container {
-    z-index: 10;
+    z-index: 99;
     position: fixed;
     top: 0;
     right: 0;
@@ -22,22 +22,27 @@
   
   .nav-container {
     z-index: 99;
-    position: fixed;
+   
     width: 100vw;
     height: 100vh;
-    top: 0;
-    right: 0;
+ 
     display: none;
     overflow: hidden;
     pointer-events: none;
   }
   .nav-container.-open {
     pointer-events: initial;
+    z-index: 99;
     width: 100%;
+    height: 100vh;
     display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
     transition-timing-function: ease;
   }
   
+  .nav-container .container {z-index: 50;}
+
   .background-wrapper {
     width: calc(1.5 * (100vh + 100vw));
     height: calc(1.5 * (100vh + 100vw));
@@ -45,6 +50,7 @@
     transform-origin: center;
     position: fixed;
     top: 0;
+    z-index: 11;
     right: 0;
   }
   
@@ -347,7 +353,7 @@
     text-shadow: 0 0 8px green;
   }
   
-  body {
+  /* body {
     font-family: "Poppins", sans-serif;
     background: #747474;
     widows: 100%;
@@ -358,13 +364,13 @@
   @media screen and (max-width:768px){
      body {
     font-family: "Poppins", sans-serif;
-    background: #747474 !important;}}
+    background: #747474 !important;}} */
 
 /* SOCIAL MEDIA 
   =============================== */
   .media ul {
     position: absolute;
-    z-index: 50;
+    z-index: 10;
     bottom: 250px;
     left: -140px;
     transform: rotate(-90deg);
@@ -377,7 +383,7 @@
     padding: 0 30px;
     text-transform: uppercase;
   }
-
+  .media ul li:hover{text-shadow: 0 0 16px green;}
 
   @media only screen and (max-width: 680px) {
     body {
